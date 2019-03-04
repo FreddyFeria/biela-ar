@@ -1,7 +1,5 @@
-# nicolocarpignoli.github.io
+# freddyferia.github.io
 
-A playground for Web AR technologies.
+Visor para proyecto Biela.
 
-- [AR.js (`ar-playground/`)](https://github.com/nicolocarpignoli/nicolocarpignoli.github.io/tree/master/ar-playground)
-
-//TODO Add More
+- [AR.js (`ar-playground/`)](https://github.com/freddyferia/freddyferia.github.io/tree/master/ar-playground)

@@ -1,7 +1,7 @@
 # AR.js playground
 
-## Demo
-[Try out the AR.js Demo Playground](https://nicolocarpignoli.github.io/ar-playground/)
+## Modelos de Realidad Aumentada
+[Modelos de Realidad Aumentada para proyecto Biela - Sistema de movilidad familiar alternativa en la localidad de Engativá](https://nicolocarpignoli.github.io/ar-playground/)
 
 ## Articles
 
