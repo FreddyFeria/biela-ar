@@ -1,8 +1,8 @@
 # AR.js playground
 
 ## Modelos de Realidad Aumentada
-[Modelos de Realidad Aumentada para proyecto Biela - Sistema de movilidad familiar alternativa en la localidad de Engativá](https://nicolocarpignoli.github.io/ar-playground/)
 
+[Modelos de Realidad Aumentada para proyecto Biela - Sistema de movilidad familiar alternativa en la localidad de Engativá](https://freddyferia.github.io/biela-ar/ar-playground/)
 ## Articles
 
 * [Introduction to AR.js](https://medium.com/chialab-open-source/ar-js-the-simpliest-way-to-get-cross-browser-ar-on-the-web-8f670dd45462)
