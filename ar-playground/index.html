@@ -12,10 +12,18 @@
         <a-scene embedded arjs='sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;' renderer="precision: medium;">
 
         <a-assets>
-            <a-asset-item id="bici_model" src="https://raw.githubusercontent.com/FreddyFeria/biela-ar/master/ar-playground/models/bici.gltf"></a-asset-item>
-			<a-asset-item id="rack_bici_model" src="https://raw.githubusercontent.com/FreddyFeria/biela-ar/master/ar-playground/models/rack_bici.glb"></a-asset-item>
-			<a-asset-item id="tandem_model" src="https://raw.githubusercontent.com/FreddyFeria/biela-ar/master/ar-playground/models/tandem.glb"></a-asset-item>
-			<a-asset-item id="rack_tandem_model" src="https://raw.githubusercontent.com/FreddyFeria/biela-ar/master/ar-playground/models/rack_tandem.glb"></a-asset-item>
+            <a-asset-item id="bici_model" src="https://raw.githubusercontent.com/FreddyFeria/biela-ar/master/ar-playground/models/bici.gltf">
+			</a-asset-item>
+			<a-asset-item id="rack_bici_model" src="https://raw.githubusercontent.com/FreddyFeria/biela-ar/master/ar-playground/models/rack_bici.glb">
+			</a-asset-item>
+			<a-asset-item id="tandem_model" src="https://raw.githubusercontent.com/FreddyFeria/biela-ar/master/ar-playground/models/tandem.glb">
+			</a-asset-item>
+			<a-asset-item id="rack_tandem_model" src="https://raw.githubusercontent.com/FreddyFeria/biela-ar/master/ar-playground/models/rack_tandem.glb">
+			</a-asset-item>
+			<a-asset-item id="cargo_model" src="https://raw.githubusercontent.com/FreddyFeria/biela-ar/master/ar-playground/models/full_cargo.glb">
+			</a-asset-item>
+			<a-asset-item id="rack_cargo_model" src="https://raw.githubusercontent.com/FreddyFeria/biela-ar/master/ar-playground/models/semi_cargo.glb">
+			</a-asset-item>
         </a-assets>
 
         <a-marker id="square" type='barcode' value='7'>
@@ -25,10 +33,10 @@
 
         <a-marker markerhandler emitevents="true" cursor="fuse: false; rayOrigin: mouse" id="bici_marker" type='barcode' value='1'>
             <a-entity
-                id="bici_entity"
-                gltf-model="#bici_model"
-                scale="3 3 3"
-				position="0 -4">
+			id="bici_entity"
+			gltf-model="#bici_model"
+			scale="3 3 3"
+			position="0 -4">
 				<a-animation attribute="rotation" dur="7000" to="0 360 0" easing="linear" repeat="indefinite">
 				</a-animation>
             </a-entity>
@@ -36,17 +44,17 @@
 		
 		<a-marker markerhandler emitevents="true" cursor="fuse: false; rayOrigin: mouse" id="rack_bici_marker" type='barcode' value='4'>
             <a-entity
-                id="rack_bici_entity"
-                gltf-model="#rack_bici_model"
-                scale="0.005 0.005 0.005">
+			id="rack_bici_entity"
+			gltf-model="#rack_bici_model"
+			scale="0.005 0.005 0.005">
             </a-entity>
         </a-marker>
 		
 		<a-marker markerhandler emitevents="true" cursor="fuse: false; rayOrigin: mouse" id="tandem_marker" type='barcode' value='2'>
             <a-entity
-                id="tandem_entity"
-                gltf-model="#tandem_model"
-                scale="0.005 0.005 0.005">
+			id="tandem_entity"
+			gltf-model="#tandem_model"
+			scale="0.005 0.005 0.005">
 				<a-animation attribute="rotation" dur="9000" to="0 360 0" easing="linear" repeat="indefinite">
 				</a-animation>
             </a-entity>
@@ -54,9 +62,27 @@
 		
 		<a-marker markerhandler emitevents="true" cursor="fuse: false; rayOrigin: mouse" id="rack_tandem_marker" type='barcode' value='6'>
             <a-entity
-                id="rack_bici_entity"
-                gltf-model="#rack_tandem_model"
-                scale="0.005 0.005 0.005">
+			id="rack_bici_entity"
+			gltf-model="#rack_tandem_model"
+			scale="0.005 0.005 0.005">
+            </a-entity>
+        </a-marker>
+		
+		<a-marker markerhandler emitevents="true" cursor="fuse: false; rayOrigin: mouse" id="cargo_marker" type='barcode' value='2'>
+            <a-entity
+			id="cargo_entity"
+			gltf-model="#cargo_model"
+			scale="0.005 0.005 0.005">
+				<a-animation attribute="rotation" dur="9000" to="0 360 0" easing="linear" repeat="indefinite">
+				</a-animation>
+            </a-entity>
+        </a-marker>
+		
+		<a-marker markerhandler emitevents="true" cursor="fuse: false; rayOrigin: mouse" id="rack_cargo_marker" type='barcode' value='6'>
+            <a-entity
+			id="rack_cargo_entity"
+			gltf-model="#rack_cargo_model"
+			scale="0.005 0.005 0.005">
             </a-entity>
         </a-marker>
 
